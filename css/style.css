@@ -48,7 +48,8 @@ a {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,6 +75,7 @@ a {
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
+    
 }
 
 .navbar a:hover,
@@ -87,6 +89,7 @@ a {
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
+    background-color: transparent;
 }
 
 /* home design css starts */
@@ -616,7 +619,7 @@ span {
         display: none;
     }
 
-    .navbar .active{
+    .navbar.active{
         display: block;
     }
 
@@ -631,7 +634,7 @@ span {
     }
 
     .home-content h3{
-        font-size: 4rem;
+        font-size: 2.6rem;
     }
 
     .home-content h1{
