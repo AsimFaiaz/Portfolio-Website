@@ -71,7 +71,7 @@ a {
 /* Navbar css starts */
 
 .navbar a {
-    font-size: 1.7rem;
+    font-size: 3rem;
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
