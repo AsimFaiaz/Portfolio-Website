@@ -28,10 +28,10 @@ window.onscroll = () => {
         };
     });
 
-    /* Sticky navbar */
-    let header = document.querySelector('header');
+    // /* Sticky navbar */
+    // let header = document.querySelector('header');
 
-    header.classList.toggle('sticky', window.scrollY > 100);
+    // header.classList.toggle('sticky', window.scrollY > 100);
 
     /*Remove toggle bar when click navbar link on scroll*/
     menuIcon.classList.remove('bx-x');
@@ -52,12 +52,41 @@ ScrollReveal().reveal('.home-content h3, .about-content h3', { origin:'left' });
 ScrollReveal().reveal('.about-content', { origin:'right' });
 
 /* Text Animation and effects */
-const typed = new Typed('.multiple-text',{
-    strings: ['FullStack Developer', 'Web Developer', 'Graphic Designing'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    showCursor: false
-    //loop: true
-});
 
+const lines = ["Software Development", "Web Development", "Graphics Design", "Video Editing"];
+const typedElements = [
+  document.getElementById("line1"),
+  document.getElementById("line2"),
+  document.getElementById("line3"),
+  document.getElementById("line4")
+];
+
+function typeNextLine(index) {
+  if (index >= typedElements.length) return;
+
+  const typed = new Typed(typedElements[index], {
+    strings: [lines[index]],
+    typeSpeed: 50,
+    showCursor: false,
+    onComplete: () => {
+      setTimeout(() => {
+        typeNextLine(index + 1);
+      }, 1000); // Delay before typing the next line
+    }
+  });
+}
+
+typeNextLine(0);
+
+/* Read more button functionality */
+const readMoreBtn = document.getElementById('readMoreBtn');
+const additionalContent = document.querySelector('.additional-content');
+
+readMoreBtn.addEventListener('click', () => {
+  additionalContent.classList.toggle('show');
+  if (additionalContent.classList.contains('show')) {
+    readMoreBtn.textContent = 'Read Less';
+  } else {
+    readMoreBtn.textContent = 'Read More';
+  }
+});
