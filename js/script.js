@@ -50,6 +50,7 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.edu-row, .sk-row, .project-box, .contact-form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h3, .about-content h3', { origin: 'left' });
 ScrollReveal().reveal('.about-content', { origin: 'right' });
+ScrollReveal().reveal('.btn-con', { origin: 'right', distance: '30px', delay: 200 });
 
 /* Text Animation and effects */
 

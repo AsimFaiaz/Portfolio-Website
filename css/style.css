@@ -611,7 +611,7 @@ span {
     }
 }
 
-@media(max-width: 768px) {
+@media screen and (max-width: 768px) {
     #menu-icon {
         display: block;
     }
@@ -640,15 +640,18 @@ span {
 
     .home {
         flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .home-content h3 {
-        font-size: 2.6rem;
+        font-size: 1.5rem;
     }
 
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 2.5rem;
     }
+
 
     /* .home-img img{                Maybe implement later
         width: 70vw;
@@ -688,6 +691,10 @@ span {
     .contact form .input-box input {
         width: 100%;
     }
+
+    .home {
+        justify-content: center;
+    }
 }
 
 @media (max-width:365px) {
@@ -700,3 +707,87 @@ span {
         margin-top: 2rem;
     }
 }
+
+@media screen and (max-width: 480px) {
+
+    .home {
+        justify-content: center;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home h3 {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 494px) {
+
+    .home {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        justify-content: space-around;
+        display: flex;
+    }
+
+    .home-content {
+        text-align: left;
+        margin-left: auto;
+        margin-right: 60px;
+        max-width: 162px;
+
+        /* Depending on how it looks later */
+        /* margin-right: auto;
+        max-width: 350px; */
+    }
+
+    .btn,
+    .btn-con {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+
+
+
+
+/* Not deployed yet - Maybe later */
+
+/* @media screen and (max-width: 477px) {
+    /* Adjustments for even smaller screens */
+
+/*.home {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        justify-content: space-around;
+        display: flex;
+    }
+
+    .home-content {
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 350px;
+    }
+
+    .social-media {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .btn,
+    .btn-con {
+        /* display: block;
+        margin: 0.5rem 0;
+        padding: 0.25rem 0.5rem;
+        font-size: 1rem;
+    }
+} */
