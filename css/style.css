@@ -76,7 +76,7 @@ a {
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
-    
+
 }
 
 .navbar a:hover,
@@ -166,7 +166,7 @@ span {
     font-weight: 600;
     transition: 0.5s ease;
     width: 189.59px;
-    margin: 20px;  
+    margin: 20px;
     justify-content: center;
 }
 
@@ -202,7 +202,7 @@ span {
 
 .additional-content {
     display: none;
-  }
+}
 
 .show {
     display: block;
@@ -598,11 +598,11 @@ span {
         padding: 10rem 3% 2rem;
     }
 
-    .project{
+    .project {
         padding-bottom: 7rem;
     }
 
-    .contact{
+    .contact {
         min-height: auto;
     }
 
@@ -612,13 +612,13 @@ span {
 }
 
 @media(max-width: 768px) {
-    #menu-icon{
+    #menu-icon {
         display: block;
     }
 
-    .navbar{
+    .navbar {
         position: absolute;
-        top:100%;
+        top: 100%;
         left: 0;
         width: 100%;
         padding: 1rem 3%;
@@ -628,25 +628,25 @@ span {
         display: none;
     }
 
-    .navbar.active{
+    .navbar.active {
         display: block;
     }
 
-    .navbar a{
+    .navbar a {
         display: block;
         font-size: 2rem;
-        margin:3rem 0;
+        margin: 3rem 0;
     }
 
-    .home{
+    .home {
         flex-direction: column;
     }
 
-    .home-content h3{
+    .home-content h3 {
         font-size: 2.6rem;
     }
 
-    .home-content h1{
+    .home-content h1 {
         font-size: 5rem;
     }
 
@@ -656,7 +656,7 @@ span {
 
     } */
 
-    .about{
+    .about {
         flex-direction: column-reverse;
     }
 
@@ -665,37 +665,37 @@ span {
         margin-top: 4rem;
     } */
 
-    .project h2{
+    .project h2 {
         margin-bottom: 3rem;
     }
 
-    .project-container{
+    .project-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 617px){
-    .project-container{
+@media (max-width: 617px) {
+    .project-container {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width:450px){
-    html{
+@media (max-width:450px) {
+    html {
         font-size: 50%;
     }
 
-    .contact form  .input-box input{
+    .contact form .input-box input {
         width: 100%;
     }
 }
 
-@media (max-width:365px){
-    .footer{
+@media (max-width:365px) {
+    .footer {
         flex-direction: column-reverse;
     }
 
-    .footer p{
+    .footer p {
         text-align: center;
         margin-top: 2rem;
     }
