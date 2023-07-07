@@ -90,3 +90,59 @@ readMoreBtn.addEventListener('click', () => {
     readMoreBtn.textContent = 'Read More';
   }
 });
+
+// function sendMail(){
+//   var params ={
+//     firstname: document.getElementById("firstName").value,
+//     lastname: document.getElementById ("lastName").value,
+//     email: document.getElementById("email").value,
+//     number: document.getElementById("number").value,
+//     message: document.getElementById("message").value,
+//   };
+
+//   const serviceID  = "service_cw2e0gr";
+//   const templateID = "template_i55yasc";
+
+//   emailjs.send(serviceID, templateID, params)
+//     .then((res) => {
+//       document.getElementById("firstName").value = "";
+//       document.getElementById("lastName").value = "";
+//       document.getElementById("email").value = "";
+//       document.getElementById("number").value = "";
+//       document.getElementById("message").value = "";
+//       console.log(res);
+//     alert("Message sent successfully!");
+//   })
+//     .catch((err) => console.log(err));
+// }
+
+
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Get form inputs
+  var firstName = document.getElementById("firstName").value;
+  var lastName = document.getElementById("lastName").value;
+  var number = document.getElementById("number").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  // Send email using EmailJS
+  var templateParams = {
+     name: firstName + " " + lastName,
+    to_name: "faiazasim@gmail.com",
+    number: number,
+    email: email,
+    message: message,
+  };
+
+  emailjs.send("service_cw2e0gr", "template_i55yasc", templateParams)
+    .then(function (response) {
+      console.log("SUCCESS!", response.status, response.text);
+      alert("Message sent successfully!");
+      document.getElementById("contactForm").reset(); // Reset form
+    }, function (error) {
+      console.log("FAILED...", error);
+      alert("Failed to send message. Please try again later.");
+    });
+});

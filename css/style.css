@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    font-family: 'poppins', 'sans-serif';
+    font-family: poppins, sans-serif;
     background: var(--bg-color);
     color: var(--text-color)
 }

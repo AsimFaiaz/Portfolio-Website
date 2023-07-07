@@ -11,6 +11,16 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--Icons from https://boxicons.com  -->
 
+    <!-- EmailJS -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("jWZC7A772tf0FACLJ");
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -378,17 +388,17 @@
     <section class="contact" id="contact">
         <h2 class="heading">let's have a chat <span>today!</span></h2>
 
-        <form action="#">
+        <form id="contactForm" method="POST">
 
             <div class="input-box">
-                <input type="text" placeholder="First name">
-                <input type="text" placeholder="Last name">
+                <input type="text" id="firstName" placeholder="First name">
+                <input type="text" id="lastName" placeholder="Last name">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="email" placeholder="Email Address">
+                <input type="number" id="number" placeholder="Mobile Number">
+                <input type="email"  id="email" placeholder="Email Address">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
 
         </form>
@@ -414,8 +424,13 @@
     <!-- Auto type animation -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
+    <!-- EmailJS -->
+    <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
+
     <!-- Custom js -->
     <script src="js/script.js"></script>
+
+    
 
 
 
