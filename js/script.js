@@ -134,8 +134,6 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     message: message,
   };
 
-
-
   emailjs.send("service_cw2e0gr", "template_i55yasc", templateParams)
     .then(function (response) {
       console.log("SUCCESS!", response.status, response.text);
@@ -149,7 +147,6 @@ document.getElementById("contactForm").addEventListener("submit", function (even
         text: successMessage,
         confirmButtonText: "OK"
       });
-
 
       document.getElementById("contactForm").reset(); // Reset form
       //this.submit();
