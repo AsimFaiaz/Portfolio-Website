@@ -165,7 +165,8 @@ span {
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.5s ease;
-    width: 189.59px;
+    width: 165px;
+    /* 189.59px */
     margin: 20px;
     justify-content: center;
 }
@@ -736,7 +737,7 @@ span {
 
     .home-content {
         text-align: left;
-        margin-left: auto;
+        margin-left: 200px;
         margin-right: 60px;
         max-width: 162px;
 
