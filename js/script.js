@@ -102,6 +102,29 @@ document.getElementById("contactForm").addEventListener("submit", function (even
   var email = document.getElementById("email").value;
   var message = document.getElementById("message").value;
 
+  // Perform client-side validation
+  if (!firstName || !lastName || !number || !email || !message) {
+    // alert("Please fill in all fields.");
+    Swal.fire({
+      icon: "error",
+      title: "Error",
+      text: "Please fill in all fields."
+    });
+    return;
+  }
+
+  // Validate email format
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    // alert("Invalid email format.");
+    Swal.fire({
+      icon: "error",
+      title: "Error",
+      text: "Invalid email format."
+    });
+    return;
+  }
+
   // Send email using EmailJS
   var templateParams = {
     name: firstName + " " + lastName,
@@ -110,6 +133,8 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     email: email,
     message: message,
   };
+
+
 
   emailjs.send("service_cw2e0gr", "template_i55yasc", templateParams)
     .then(function (response) {
@@ -127,6 +152,7 @@ document.getElementById("contactForm").addEventListener("submit", function (even
 
 
       document.getElementById("contactForm").reset(); // Reset form
+      //this.submit();
     }, function (error) {
       console.log("FAILED...", error);
       alert("Failed to send message. Please try again later.");
