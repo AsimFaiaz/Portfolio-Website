@@ -154,6 +154,32 @@ span {
 }
 
 
+/* Extra work for css fit up media query */
+
+.icon-resume {
+    visibility: hidden;
+}
+
+.btn-down {
+    display: inline-flex;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+    width: 189.59px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btn-down:hover {
+    box-shadow: none;
+}
+
 .btn-con {
     display: inline-flex;
     padding: 1rem 2.8rem;
@@ -165,15 +191,15 @@ span {
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.5s ease;
-    width: 165px;
+    width: 175px;
     /* 189.59px */
-    margin: 20px;
     justify-content: center;
 }
 
 .btn-con:hover {
     box-shadow: none;
 }
+
 
 
 /* home design css ends */
@@ -725,7 +751,7 @@ span {
 }
 
 
-@media screen and (max-width: 494px) {
+@media screen and (max-width: 496px) {
 
     .home {
         flex-direction: column;
@@ -737,7 +763,7 @@ span {
 
     .home-content {
         text-align: left;
-        margin-left: 200px;
+        margin-left: 0px;
         margin-right: 60px;
         max-width: 162px;
 
@@ -746,10 +772,24 @@ span {
         max-width: 350px; */
     }
 
-    .btn,
-    .btn-con {
-        font-size: 1.4rem;
+    .social-media {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    .btn-down {
+        visibility: hidden;
+    }
+
+    .btn-con {
+        margin: 0px;
+    }
+
+    .icon-resume {
+        visibility: visible;
+    }
+
 }
 
 
