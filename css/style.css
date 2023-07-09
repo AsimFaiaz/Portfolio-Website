@@ -22,6 +22,16 @@
     --second-main-color: #0ef;
 }
 
+/* This part will be changed frquently */
+.light-mode {
+    --bg-color: #5CDB95;
+    --second-bg-color: #8EE4AF;
+    --third-bg-color: #379683;
+    --text-color: #EDF5E1;
+    --main-color: #05386B;
+    --second-main-color: #0ef;
+}
+
 html {
     font-size: 60%;
     overflow-x: hidden;
@@ -171,7 +181,7 @@ span {
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.5s ease;
-    width: 189.59px;
+    /* width: 189.59px; */
     justify-content: center;
     margin: 20px;
 }
@@ -708,6 +718,15 @@ span {
     .project-container {
         grid-template-columns: 1fr;
     }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width:450px) {
@@ -742,11 +761,12 @@ span {
     }
 
     .home h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
     }
 
     .home h3 {
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -790,7 +810,40 @@ span {
         visibility: visible;
     }
 
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
 }
+
+@media screen and (max-width: 283px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .footer-icon a {
+        margin-left: 0.5rem;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
 
 
 

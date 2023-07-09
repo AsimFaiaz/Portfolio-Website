@@ -50,12 +50,12 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.edu-row, .sk-row, .project-box, .contact-form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h3, .about-content h3', { origin: 'left' });
 ScrollReveal().reveal('.about-content', { origin: 'right' });
-ScrollReveal().reveal('.btn-con', { origin: 'right', distance: '30px', delay: 200 });
+ScrollReveal().reveal('.btn-con', { origin: 'left', distance: '30px', delay: 200 });
 ScrollReveal().reveal('.btn', { origin: 'left', distance: '30px', delay: 200 });
 
 /* Text Animation and effects */
 
-const lines = ["Software Development", "Web Development", "Graphics Design", "Video Editing"];
+const lines = ["Software Development", "Web Development", "Graphics Designing", "Video Editing"];
 const typedElements = [
   document.getElementById("line1"),
   document.getElementById("line2"),
@@ -157,3 +157,26 @@ document.getElementById("contactForm").addEventListener("submit", function (even
       alert("Failed to send message. Please try again later.");
     });
 });
+
+/* Light and Dark Mode */
+let colorModeButton = document.querySelector('.color-mode');
+let isLightMode = localStorage.getItem('isLightMode') === 'true';
+
+setTheme(isLightMode);
+
+colorModeButton.addEventListener('click', toggleColorMode);
+
+function setTheme(isLightMode) {
+  if (isLightMode) {
+    document.body.classList.add('light-mode');
+    localStorage.setItem('isLightMode', 'true');
+  } else {
+    document.body.classList.remove('light-mode');
+    localStorage.setItem('isLightMode', 'false');
+  }
+}
+
+function toggleColorMode() {
+  isLightMode = !isLightMode;
+  setTheme(isLightMode);
+}
