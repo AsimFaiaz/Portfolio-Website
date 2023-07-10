@@ -57,13 +57,8 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 100vw;
     padding: 10rem 9% 2rem;
-    /* ----------- */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* ------------Added new--------------------- */
@@ -881,13 +876,6 @@ span {
         margin-top: 1rem;
     }
 }
-
-
-
-
-
-
-
 
 
 /* Not deployed yet - Maybe later */

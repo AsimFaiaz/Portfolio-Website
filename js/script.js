@@ -1,4 +1,3 @@
-
 /* Toggle navbar */
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -25,13 +24,19 @@ window.onscroll = () => {
         links.classList.remove('active');
         document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
       });
-    };
+    }
+    else {
+      // Remove 'active' class from all nav links for sections other than navbar
+      navLinks.forEach(links => {
+        links.classList.remove('active');
+      });
+    }
   });
 
-  // /* Sticky navbar */
-  // let header = document.querySelector('header');
+  /* Sticky navbar */
+  let header = document.querySelector('header');
 
-  // header.classList.toggle('sticky', window.scrollY > 100);
+  header.classList.toggle('sticky', window.scrollY > 100);
 
   /*Remove toggle bar when click navbar link on scroll*/
   menuIcon.classList.remove('bx-x');
@@ -93,7 +98,9 @@ readMoreBtn.addEventListener('click', () => {
   }
 });
 
+// Rest of the code...
 
+/* Contact form submission */
 document.getElementById("contactForm").addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent form submission
 
@@ -106,7 +113,6 @@ document.getElementById("contactForm").addEventListener("submit", function (even
 
   // Perform client-side validation
   if (!firstName || !lastName || !number || !email || !message) {
-    // alert("Please fill in all fields.");
     Swal.fire({
       icon: "error",
       title: "Error",
@@ -118,7 +124,6 @@ document.getElementById("contactForm").addEventListener("submit", function (even
   // Validate email format
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
-    // alert("Invalid email format.");
     Swal.fire({
       icon: "error",
       title: "Error",
@@ -139,19 +144,14 @@ document.getElementById("contactForm").addEventListener("submit", function (even
   emailjs.send("service_cw2e0gr", "template_i55yasc", templateParams)
     .then(function (response) {
       console.log("SUCCESS!", response.status, response.text);
-      // Customize the success message
       var successMessage = "Your message has been successfully sent! Thank you for contacting.";
-
-      // Display a styled success popup using SweetAlert2
       Swal.fire({
         icon: "success",
         title: "Success!",
         text: successMessage,
         confirmButtonText: "OK"
       });
-
       document.getElementById("contactForm").reset(); // Reset form
-      //this.submit();
     }, function (error) {
       console.log("FAILED...", error);
       alert("Failed to send message. Please try again later.");
