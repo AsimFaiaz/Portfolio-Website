@@ -59,7 +59,7 @@ body {
 section {
     /* min-height: 100vh; */
     /* min-width: 100vw; */
-    min-height: 100vw;
+    min-height: 100vh;
     /*By using vw the about section will come accross the home but ignoring the issue evntually*/
     padding: 10rem 9% 2rem;
 }
