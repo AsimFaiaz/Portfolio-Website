@@ -12,25 +12,29 @@
     font-family: 'poppins', 'sans-serif';
 }
 
+/* -------------------------------------- */
+/* This part will be changed frquently */
+/* -------------------------------------- */
+
 :root {
-    /*root element */
+    /* root element */
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --third-bg-color: #112e42;
     --text-color: #fff;
     --main-color: #47867c;
-    --second-main-color: #0ef;
 }
 
-/* This part will be changed frquently */
 .light-mode {
-    --bg-color: #5CDB95;
-    --second-bg-color: #8EE4AF;
-    --third-bg-color: #379683;
-    --text-color: #EDF5E1;
-    --main-color: #05386B;
-    --second-main-color: #0ef;
+    --bg-color: #E3E2DF;
+    --second-bg-color: #E3AFBC;
+    --third-bg-color: #2E151B;
+    --text-color: #9A1F50;
+    --main-color: #5F001E;
 }
+
+/* -------------------------------------- */
+/* -------------------------------------- */
 
 html {
     font-size: 60%;
