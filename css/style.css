@@ -57,7 +57,7 @@ body {
 }
 
 section {
-    min-height: 100vw;
+    min-height: 100vh;
     padding: 10rem 9% 2rem;
     /* ----------- */
     display: flex;
@@ -497,14 +497,7 @@ span {
 
 .contact {
     background: var(--third-bg-color);
-    /* ----------- */
-    min-height: 100vw;
-    padding: 10rem 9% 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    width: 100%
 }
 
 .contact h2 {
