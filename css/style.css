@@ -26,12 +26,21 @@
 }
 
 .light-mode {
+    --bg-color: #EAEFDC;
+    --second-bg-color: #D8C3A5;
+    --third-bg-color: #8E8D8A;
+    --text-color: #E98075;
+    --main-color: #2E151B;
+    /* #E85A4F;  - Darker shade of text color*/
+}
+
+/* .light-mode {
     --bg-color: #E3E2DF;
     --second-bg-color: #E3AFBC;
     --third-bg-color: #2E151B;
     --text-color: #9A1F50;
     --main-color: #5F001E;
-}
+} */
 
 /* -------------------------------------- */
 /* -------------------------------------- */
