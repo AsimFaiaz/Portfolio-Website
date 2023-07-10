@@ -57,7 +57,7 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 100vw;
     padding: 10rem 9% 2rem;
     /* ----------- */
     display: flex;
@@ -69,6 +69,14 @@ section {
 /* ------------Added new--------------------- */
 .second-bg-section {
     background-color: var(--second-bg-color);
+    color: var(--text-color);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+.third-bg-section {
+    background-color: var(--third-bg-color);
     color: var(--text-color);
     width: 100vw;
     margin-left: calc(-50vw + 50%);
@@ -489,6 +497,14 @@ span {
 
 .contact {
     background: var(--third-bg-color);
+    /* ----------- */
+    min-height: 100vw;
+    padding: 10rem 9% 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .contact h2 {
