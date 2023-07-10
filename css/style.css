@@ -59,7 +59,23 @@ body {
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
+    /* ----------- */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+/* ------------Added new--------------------- */
+.second-bg-section {
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+/* ---------------Delete if doesnt work------- */
 
 a {
     /*Remove hyperlink underlines*/
@@ -640,13 +656,13 @@ span {
 }
 
 @media(max-width: 991px) {
-    /* .header {
+    .header {
         padding: 2rem 3%;
     }
 
     section {
         padding: 10rem 3% 2rem;
-    } */
+    }
 
     .project {
         padding-bottom: 7rem;
