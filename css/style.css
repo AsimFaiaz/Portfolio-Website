@@ -53,35 +53,20 @@ html {
 body {
     font-family: poppins, sans-serif;
     background: var(--bg-color);
-    color: var(--text-color)
+    color: var(--text-color);
+
+    /* Important to stop the screen issue */
+    overflow-x: hidden;
+
 }
 
 section {
     /* min-height: 100vh; */
     /* min-width: 100vw; */
     min-height: 100vh;
-    /*By using vw the about section will come accross the home but ignoring the issue evntually*/
     padding: 10rem 9% 2rem;
 }
 
-/* ------------Added new--------------------- */
-.second-bg-section {
-    background-color: var(--second-bg-color);
-    color: var(--text-color);
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-}
-
-.third-bg-section {
-    background-color: var(--third-bg-color);
-    color: var(--text-color);
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-}
-
-/* ---------------Delete if doesnt work------- */
 
 a {
     /*Remove hyperlink underlines*/
@@ -495,7 +480,6 @@ span {
 
 .contact {
     background: var(--third-bg-color);
-    width: 100%
 }
 
 .contact h2 {
@@ -655,13 +639,15 @@ span {
 
 
 
-
+/* max width 1200 */
 @media(max-width: 1200px) {
     html {
         font-size: 55%;
     }
 }
 
+
+/* Max width 991 */
 @media(max-width: 991px) {
     .header {
         padding: 2rem 3%;
@@ -684,6 +670,8 @@ span {
     }
 }
 
+
+/* Max width 768 */
 @media screen and (max-width: 768px) {
     #menu-icon {
         display: block;
@@ -750,6 +738,8 @@ span {
     }
 }
 
+
+/* Max Width 617 */
 @media (max-width: 617px) {
     .project-container {
         grid-template-columns: 1fr;
@@ -765,48 +755,8 @@ span {
     }
 }
 
-@media (max-width:450px) {
-    html {
-        font-size: 50%;
-    }
 
-    .contact form .input-box input {
-        width: 100%;
-    }
-
-    .home {
-        justify-content: center;
-    }
-}
-
-@media (max-width:365px) {
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p {
-        text-align: center;
-        margin-top: 2rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    .home {
-        justify-content: center;
-    }
-
-    .home h1 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-    }
-
-    .home h3 {
-        font-size: 1.7rem;
-    }
-}
-
-
+/* Max Width 496 */
 @media screen and (max-width: 496px) {
 
     .home {
@@ -857,6 +807,55 @@ span {
 
 }
 
+
+/* Max Width 480 */
+@media screen and (max-width: 480px) {
+
+    .home {
+        justify-content: center;
+    }
+
+    .home h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .home h3 {
+        font-size: 1.7rem;
+    }
+}
+
+
+/* Max Width 450 */
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+
+    .home {
+        justify-content: center;
+    }
+}
+
+
+/* Max Width 365 */
+@media (max-width:365px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+
+/* Max Width 283 */
 @media screen and (max-width: 283px) {
     .footer {
         flex-direction: column;
@@ -881,6 +880,9 @@ span {
 }
 
 
+/* ------------------------------------ */
+/* ------------End of CSS---------------*/
+/* ------------------------------------ */
 
 /* Not deployed yet - Maybe later */
 
