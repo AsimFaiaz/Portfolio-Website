@@ -21,6 +21,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --third-bg-color: #112e42;
+    --fourth-bg-color: black;
     --text-color: #fff;
     --main-color: #47867c;
 }
@@ -29,6 +30,7 @@
     --bg-color: #EAEFDC;
     --second-bg-color: #D8C3A5;
     --third-bg-color: #8E8D8A;
+    --fourth-bg-color: white;
     --text-color: #E98075;
     --main-color: #2E151B;
     /* #E85A4F;  - Darker shade of text color*/
@@ -55,7 +57,7 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
 
-    /* Important to stop the screen issue */
+    /* Important to stop the screen issue with smaller screens */
     overflow-x: hidden;
 
 }
@@ -80,11 +82,13 @@ a {
     width: 100%;
     padding: 2rem 9%;
     /* background: var(--bg-color); */
-    background-color: transparent;
+    /* background-color: transparent; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
 }
 
 .header .sticky {
@@ -536,6 +540,19 @@ span {
     margin-top: 4rem;
 }
 
+.project h1 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: medium;
+}
+
+.project h3 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: medium;
+    color: var(--fourth-bg-color)
+}
+
 .project-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -568,7 +585,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, 0.9), var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;
