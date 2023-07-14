@@ -60,12 +60,12 @@ ScrollReveal().reveal('.btn', { origin: 'left', distance: '30px', delay: 200 });
 
 /* Text Animation and effects */
 
-const lines = ["Software Development", "Web Development", "Graphics Designing", "Video Editing"];
+const lines = ["Software Development", "Web Development", "Graphics Designing", "UI/UX"];
 const typedElements = [
   document.getElementById("line1"),
   document.getElementById("line2"),
   document.getElementById("line3"),
-  document.getElementById("line4")
+  document.getElementById("line4"),
 ];
 
 function typeNextLine(index) {
