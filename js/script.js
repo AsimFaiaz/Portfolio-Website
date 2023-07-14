@@ -1,4 +1,4 @@
-/* Toggle navbar */
+/* ==================== Toggle navbar ====================*/
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -8,7 +8,7 @@ menuIcon.onclick = () => {
 };
 
 
-/* Scroll bar active */
+/* ================ Scroll bar active ==================== */
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -33,7 +33,7 @@ window.onscroll = () => {
     }
   });
 
-  /* Sticky navbar */
+  /* ==================== Sticky navbar ====================  */
   let header = document.querySelector('header');
 
   header.classList.toggle('sticky', window.scrollY > 100);
@@ -43,7 +43,7 @@ window.onscroll = () => {
   navbar.classList.remove('active');
 };
 
-/* Scroll Animation and effects */
+/* =============== Scroll Animation and effects ============= */
 ScrollReveal({
   reset: true,
   distance: '80px',
@@ -58,7 +58,7 @@ ScrollReveal().reveal('.about-content', { origin: 'right' });
 ScrollReveal().reveal('.btn-con', { origin: 'left', distance: '30px', delay: 200 });
 ScrollReveal().reveal('.btn', { origin: 'left', distance: '30px', delay: 200 });
 
-/* Text Animation and effects */
+/* =============== Text Animation and effects ================ */
 
 const lines = ["Software Development", "Web Development", "Graphics Designing", "UI/UX"];
 const typedElements = [
@@ -85,7 +85,7 @@ function typeNextLine(index) {
 
 typeNextLine(0);
 
-/* Read more button functionality */
+/* ==================== Read more button functionality ====================  */
 const readMoreBtn = document.getElementById('readMoreBtn');
 const additionalContent = document.querySelector('.additional-content');
 
@@ -100,7 +100,7 @@ readMoreBtn.addEventListener('click', () => {
 
 // Rest of the code...
 
-/* Contact form submission */
+/* ====================  Contact form submission ==================== */
 document.getElementById("contactForm").addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent form submission
 
@@ -158,7 +158,7 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     });
 });
 
-/* Light and Dark Mode */
+/* ====================  Light and Dark Mode ==================== */
 let colorModeButton = document.querySelector('.color-mode');
 let isLightMode = localStorage.getItem('isLightMode') === 'true';
 
