@@ -60,7 +60,7 @@ ScrollReveal().reveal('.btn', { origin: 'left', distance: '30px', delay: 200 });
 
 /* =============== Text Animation and effects ================ */
 
-const lines = ["Software and Web Development", "Graphics and Visual Design", "User-centric Design", "Transforming ideas into reality through Software Development, Web Design, Graphics, and Intuitive User Experiences - From Pixels to Platforms"];
+const lines = ["Software and Web Development", "Graphics and Visual Design", "User-centric Design", "Transforming ideas into reality through Software Development, Web Design, Graphics, and Intuitive User Experiences <br> - From Pixels to Platforms"];
 const typedElements = [
   document.getElementById("line1"),
   document.getElementById("line2"),
