@@ -137,6 +137,8 @@ a {
     max-width: 60rem;
 }
 
+/* Extra code */
+
 .home h4 {
     font-size: medium;
 }
@@ -751,6 +753,8 @@ span {
         margin-top: 2rem;
     }
 
+    /* Extra code */
+
     .home h4 {
         font-size: 1.3rem;
     }
@@ -806,6 +810,8 @@ span {
         margin-top: 2rem;
     }
 
+    /* Extra code */
+
     .home h3 {
         font-size: 1.2rem;
 
@@ -830,8 +836,11 @@ span {
         margin-bottom: 10px;
     }
 
+    /* Extra code */
+
     .home h3 {
         font-size: 1.2rem;
+        /* 1.7rem if JS sep */
 
     }
 
@@ -858,11 +867,13 @@ span {
 
     .home h3 {
         font-size: 1.2rem;
+        /* 1.7rem if JS sep*/
 
     }
 
     .home h4 {
         display: none;
+        /* Change octnally */
     }
 }
 
@@ -877,6 +888,8 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
+
+    /* Extra code */
 
     .home h3 {
         font-size: 1.2rem;
@@ -911,6 +924,8 @@ span {
         text-align: center;
         margin-top: 1rem;
     }
+
+    /* Extra code */
 
     .home h3 {
         font-size: 1.2rem;
