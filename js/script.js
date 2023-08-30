@@ -54,7 +54,7 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.edu-row, .sk-row, .project-box, .contact-form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h3, .about-content h3', { origin: 'left' });
-ScrollReveal().reveal('.about-content', { origin: 'right' });
+ScrollReveal().reveal('.about-content , .home-content h4', { origin: 'right' });
 ScrollReveal().reveal('.btn-con', { origin: 'left', distance: '30px', delay: 200 });
 ScrollReveal().reveal('.btn', { origin: 'left', distance: '30px', delay: 200 });
 
