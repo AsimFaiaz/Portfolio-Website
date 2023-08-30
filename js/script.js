@@ -59,7 +59,7 @@ ScrollReveal().reveal('.btn-con', { origin: 'left', distance: '30px', delay: 200
 ScrollReveal().reveal('.btn', { origin: 'left', distance: '30px', delay: 200 });
 
 /* =============== Text Animation and effects ================ */
-/* =============== Lines are subjected to change ================ */
+/* =============== Lines are subjected to change ============= */
 
 const lines = ["Software and Web Development", "Graphics and Visual Design", "User-centric Design", "Transforming ideas into reality through Software Development, Web Design, Graphics, and Intuitive User Experiences <br> - From Pixels to Platforms"];
 const typedElements = [
